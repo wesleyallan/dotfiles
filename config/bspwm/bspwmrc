@@ -36,7 +36,7 @@ bspc rule -a Screenkey manage=off
 xrdb ${HOME}/.Xresources
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg
+picom -b &
 # $HOME/.config/polybar/launch.sh --forest
 # wal -R
-# picom -b
 # feh --bg-fill ~/.dotfiles/wallpapers/wallpapper_space5.jpg
