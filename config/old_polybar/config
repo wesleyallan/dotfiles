@@ -1,0 +1,72 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;  					Polybar by: 4$L4N
+;
+;==========================================================
+
+; Sincronizando Modulos
+include-file = ~/.config/polybar/modules
+
+
+[colorsDIS]
+background = #D8DEE9
+background-mod = #f2f5fa
+foreground = #0d0d0d
+foreground-alt = #0d0d0d
+foreground-ws = #403f3e
+urgent = #c41010
+
+[colors]
+; Cor Padrao
+;background = #2e2e2e
+; Cor Dracula
+background = #282a36
+background-mod = #1f1f1f
+foreground = #D8DEE9
+foreground-alt = #D8DRR9
+foreground-ws = #403f3e
+primary = #FFFFFF
+urgent = #c41010
+
+[bar/mainBar]
+monitor =
+monitor-fallback =
+monitor-strict = false
+override-redirect = false
+bottom = false
+fixed-center = true
+width = 100%
+height = 25
+offset-x = 0%
+offset-y = 0%
+background = ${colors.background}
+foreground = ${colors.foreground}
+radius-top = 0.0
+radius-bottom = 0.0
+underline-size = 2
+underline-color = ${colors.foreground}
+module-margin-left = 0
+module-margin-right = 3
+
+font-0 = Roboto:size=11;2
+font-1 = RobotoMonoNerdFont:style=Regular:pixelsize=15;2
+font-2 = FontAwesome:pixelsize=12;2
+
+modules-left = i3 
+modules-center = date
+modules-right = xkeyboard volume memory cpu system-cpu-temppercore powermenu
+
+tray-position = right
+tray-padding = 2
+
+cursor-click = pointer
+cursor-scroll = ns-resize
