@@ -70,20 +70,15 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+s exec --no-startup-id kitty --class=Spotify -e spt
 bindsym $mod+Shift+m exec --no-startup-id thunderbird
 
-# Atalhos Workspace
-bindsym $mod+s workspace number $ws9
-bindsym $mod+m workspace number $ws4
-
 # Rofi
 bindsym $mod+d exec --no-startup-id sh ${HOME}/.config/rofi/bin/launcher
 bindsym $mod+Ctrl+d exec --no-startup-id rofi -show window
 bindsym $mod+Shift+d exec --no-startup-id rofi -show run
 
-# Rofi https://github.com/adi1090x/rofi
+# Rofi Opcao de lauchers:"https://github.com/adi1090x/rofi"
 #bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/launchers/misc/launcher.sh
-bindsym $mod+p exec --no-startup-id sh $HOME/.config/rofi/bin/powermenu
+bindsym $mod+p exec --no-startup-id sh $HOME/.config/rofi/bin/powermenuI3
 bindsym $mod+i exec --no-startup-id sh $HOME/.config/rofi/bin/network
-
 
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -146,9 +141,15 @@ set $ws8 "8"
 set $ws9 "9: Spotify  "
 set $ws10 "10"
 
+# Atalhos Workspace
+bindsym $mod+s workspace number $ws9
+bindsym $mod+m workspace number $ws4
+
 # Workspace "vim"
-bindsym $mod+Control+h workspace prev
-bindsym $mod+Control+l workspace next
+# bindsym $mod+Control+h workspace prev
+# bindsym $mod+Control+l workspace next
+bindsym $mod+bracketleft workspace prev
+bindsym $mod+bracketright workspace next
 
 
 bindsym $mod+1 workspace number $ws1

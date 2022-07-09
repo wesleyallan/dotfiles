@@ -17,7 +17,7 @@ super + n
 	networkmanager_dmenu -l 2
 
 # Rofi Menus/Applets
-super + {r,p,a,s,i}
+super + {r,p,a,z,i}
 	sh $HOME/.config/rofi/bin/{runner,powermenu,asroot,screenshot,network}
 
 super + b
