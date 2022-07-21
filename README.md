@@ -5,7 +5,7 @@ Segue as instruções para instalação e configuração do meu ambiente de estu
 ## Distro Arch
 
 Arch Linux minha distro preferida atualmente principalmente com o **bspwm ou i3wn como gerenciador de janelas.**
-> Altamente recomendado o uso do scrip que existe dentro da própria *ISO*, ou baixar uma isso do projeto [ARCH Gui](https://archlinuxgui.in/), evitando a necessidade da instalação de drivers, ambiente gráfico e gerenciador de usuários na mão, muito util.
+> Altamente recomendado o uso do scrip que existe dentro da própria *ISO*, ou baixar uma isso do projeto [ARCH Gui](https://archlinuxgui.in/), evitando a necessidade da instalação de drivers, ambiente gráfico e gerenciador de usuários na mão, muito útil.
 >
 
 Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta básicas ficaram de fora da lista, com a instalação acontecendo quando houver a necessidade do uso, por exemplo instalar o `man`
@@ -13,16 +13,17 @@ Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta
 ### Instalar
 - [LunarVim](https://github.com/LunarVim/LunarVim) 
 - [Neofetch](https://github.com/dylanaraps/neofetch) 
+  - [Temas para Neofetch](https://github.com/Chick2D/neofetch-themes)
 - [Rofi](https://github.com/davatorium/rofi)
 - [Polybar](https://github.com/polybar/polybar)
-- - [Temas para Polybar](https://github.com/adi1090x/polybar-themes)
+  - [Temas para Polybar](https://github.com/adi1090x/polybar-themes)
 - [Picom](https://github.com/yshui/picom)
 - [Pywal](https://github.com/dylanaraps/pywal)
-- - Configurar Rofi
-- - Configurar .bashrc/.zshrc para manter a coloração
-- - Plugin VScode (Caso for utilizar VScode)
-- - Plugin Firefox, pywal-firefox - AUR
-- wmctrl - Nome das janelas.
+  - Configurar Rofi
+  - Configurar `.bashrc`/`.zshrc` para manter a coloração
+  - Plugin VScode
+  - Plugin Firefox, pywal-firefox - AUR
+  - wmctrl - Nome das janelas.
 - [Playerctl](https://github.com/altdesktop/playerctl)
 - [Peaclock](https://github.com/octobanana/peaclock)
 - [Cava](https://github.com/karlstav/cava)
@@ -32,6 +33,23 @@ Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta
 - [Mps-Youtube](https://github.com/mps-youtube/mps-youtube)
 - [Exa](https://github.com/ogham/exa)
 - [Bat](https://github.com/sharkdp/bat)
+- [hdparm (Analisar Discos)](https://github.com/Distrotech/hdparm)
+- Firefox Tema, Tema GTK-3, ícones e Fontes
+  - Arquivos armazenados no Drive
+
+### Instalando Tema Firefox
+How to use a userChrome.css theme
+
+1. Type about:config into your URL bar. Click on the I accept the risk button if you're shown a warning.
+2. Seach for toolkit.legacyUserProfileCustomizations.stylesheets, layers.acceleration.force-enabled, gfx.webrender.all and svg.context-properties.content.enabled and set them to true.
+3. Go to your profile folder:
+    - Linux: $HOME/.mozilla/firefox/######.default-release/
+    - MacOS: Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release
+    - Windows: C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release
+4. If it doesn't exist already create a folder called chrome.
+5. Copy your desired userChrome.css into that folder.
+6. Optional Customise everything to your liking.
+
 
 ## Distros Debian/Ubuntu
 

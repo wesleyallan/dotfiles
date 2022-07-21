@@ -1,24 +1,28 @@
-#----------------------wesleyallan-sxhkd-Config-File-------------------------------
+#-----wesleyallan-sxhkd-Config-File-----
 
 # Terminal Emulator
 super + Return
   alacritty
 
-# Browser (Firefox)
+# Browser
 super + shift + Return
   firefox
 
 # Program Launcher
 super + d
-	sh ${HOME}/.config/rofi/bin/launcher
+	sh $HOME/.config/rofi/bin/launcher
 
 # Rofi Network Menu
 super + n
 	networkmanager_dmenu -l 2
 
+# Ranger 
+super + {_,shift + }a
+	{alacritty -e ranger, nautilus}
+
 # Rofi Menus/Applets
-super + {r,p,a,z,i}
-	sh $HOME/.config/rofi/bin/{runner,powermenu,asroot,screenshot,network}
+super + {r,p,z,i}
+	sh $HOME/.config/rofi/bin/{runner,powermenu,screenshot,network}
 
 super + b
 	rofi-bluetooth
@@ -45,7 +49,7 @@ XF86AudioPrev
 XF86AudioStop
   playerctl stop
 
-#----------------------bspwm-Hotkeys----------------------------------------------
+#-----bspwm-Hotkeys-----
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -68,7 +72,7 @@ super + g
 	bspc node -s biggest.window
 
 
-#-----------------------------state/flags--------------------------------
+#-----state/flags-----
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -79,10 +83,10 @@ super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 
-#------------------------------focus/swap-------------------------------
+#-----focus/swap-----
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,ctrl + alt + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
@@ -112,18 +116,18 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 
-#---------------------------preselect------------------------------------
+#-----preselect-----
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + shift + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
+super + shift + {1-9}
 	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
+super + shift + space
 	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
@@ -131,14 +135,14 @@ super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 
-#----------------------------move/resize--------------------------------------
+#-----move/resize-----
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+super + ctrl + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window

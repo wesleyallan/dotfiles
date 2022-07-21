@@ -226,3 +226,10 @@ jfetch
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
 fish_add_path /home/rick/.spicetify
+
+# ASDF
+source ~/.asdf/asdf.fish
+
+# Java
+# source ~/.asdf/plugins/java/set-java-home.fish
+. ~/.asdf/plugins/java/set-java-home.fish
