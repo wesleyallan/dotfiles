@@ -6,7 +6,7 @@ super + Return
 
 # Browser
 super + shift + Return
-  firefox
+  kitty
 
 # Program Launcher
 super + d
@@ -19,6 +19,9 @@ super + n
 # Ranger 
 super + {_,shift + }a
 	{alacritty -e ranger, nautilus}
+
+# Spotify-tui
+super + {_,shift + }
 
 # Rofi Menus/Applets
 super + {r,p,z,i}
@@ -33,9 +36,9 @@ super + Escape
 
 # Multimedia
 XF86AudioRaiseVolume
-  pactl set-sink-volume @DEFAULT_SINK@ +5%
+  pactl set-sink-volume @DEFAULT_SINK@ +2%
 XF86AudioLowerVolume
-  pactl set-sink-volume @DEFAULT_SINK@ -5%
+  pactl set-sink-volume @DEFAULT_SINK@ -2%
 XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle
 XF86AudioMicMute
@@ -112,15 +115,18 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
+super + {_,control + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
-
 
 #-----preselect-----
 
 # preselect the direction
 super + shift + {h,j,k,l}
 	bspc node -p {west,south,north,east}
+
+# Rotation
+super + shift + r
+  bspc node @parent -R 90
 
 # preselect the ratio
 super + shift + {1-9}

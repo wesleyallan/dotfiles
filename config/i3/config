@@ -61,7 +61,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+Return exec --no-startup-id firefox
 bindsym $mod+w kill
 bindsym $mod+f fullscreen toggle
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+t floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+c reload
 bindsym Print exec import $HOME/Images/`date +%Y-%m-%d_%H:%M:%S`.png
@@ -73,7 +73,7 @@ bindsym $mod+Shift+m exec --no-startup-id thunderbird
 # Rofi
 bindsym $mod+d exec --no-startup-id sh ${HOME}/.config/rofi/bin/launcher
 bindsym $mod+Ctrl+d exec --no-startup-id rofi -show window
-bindsym $mod+Shift+d exec --no-startup-id rofi -show run
+bindsym $mod+Shift+d exec --no-startup-id sh ${home}/.config/rofi/bin/runner
 
 # Rofi Opcao de lauchers:"https://github.com/adi1090x/rofi"
 #bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/launchers/misc/launcher.sh
@@ -113,7 +113,7 @@ bindsym $mod+v split v
 # Container Layout
 #bindsym $mod+s layout stacking
 #bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+shift+r layout toggle split
 
 # Container Focus
 #bindsym $mod+a focus parent
