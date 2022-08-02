@@ -1,0 +1,79 @@
+{
+  "sync.gist": "de748213c37b1924b637adfcadddccfb",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.quietSync": true,
+  "sync.forceDownload": false,
+  "sync.removeExtensions": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "extensions.ignoreRecommendations": true,
+  "debug.javascript.codelens.npmScripts": "never", // ?
+  "telemetry.telemetryLevel": "off", // ?
+  "debug.console.fontFamily": "JetBrains Mono",
+  "editor.parameterHints.enabled": true, // ?
+  "editor.smoothScrolling": true, // ?
+  "editor.minimap.enabled": false,
+  // "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
+  "editor.fontFamily": "'JetBrains Mono', Consolas, monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
+  "terminal.integrated.fontSize": 14,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+  "breadcrumbs.enabled": false, // ?
+  "javascript.updateImportsOnFileMove.enabled": "always", // ?
+  "cSpell.language": "en,pt-BR",
+  "cSpell.userWords": [],
+  "cSpell.enableFiletypes": [
+    "markdown"
+  ],
+  "editor.rulers": [
+    90
+  ],
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+}
