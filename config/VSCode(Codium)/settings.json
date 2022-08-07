@@ -8,13 +8,8 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.iconTheme": "material-icon-theme",
-  "bracket-pair-colorizer-2.depreciation-notice": false,
-  "extensions.ignoreRecommendations": true,
-  "debug.javascript.codelens.npmScripts": "never", // ?
-  "telemetry.telemetryLevel": "off", // ?
-  "debug.console.fontFamily": "JetBrains Mono",
-  "editor.parameterHints.enabled": true, // ?
-  "editor.smoothScrolling": true, // ?
+  "editor.parameterHints.enabled": true,
+  "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
   // "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
   "editor.fontFamily": "'JetBrains Mono', Consolas, monospace",
@@ -30,20 +25,26 @@
   "terminal.integrated.fontSize": 14,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
+  "telemetry.telemetryLevel": "off",
   "security.workspace.trust.untrustedFiles": "open",
+  "debug.javascript.codelens.npmScripts": "never",
+  "debug.console.fontFamily": "JetBrains Mono",
+  "extensions.ignoreRecommendations": true,
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-  "breadcrumbs.enabled": false, // ?
+  "breadcrumbs.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always", // ?
   "cSpell.language": "en,pt-BR",
-  "cSpell.userWords": [],
+  "cSpell.userWords": [
+    "wesleyallan"
+  ],
   "cSpell.enableFiletypes": [
     "markdown"
   ],
-  "editor.rulers": [
-    90
-  ],
+  // "editor.rulers": [
+  //   90
+  // ],
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },

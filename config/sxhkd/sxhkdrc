@@ -16,12 +16,13 @@ super + d
 super + n
 	networkmanager_dmenu -l 2
 
-# Ranger 
+# Ranger or nautilus 
 super + {_,shift + }a
 	{alacritty -e ranger, nautilus}
 
-# Spotify-tui
-super + {_,shift + }
+# btop
+super + shift + m
+    kitty --class=btop -e btop
 
 # Rofi Menus/Applets
 super + {r,p,z,i}

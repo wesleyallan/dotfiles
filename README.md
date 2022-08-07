@@ -95,17 +95,19 @@ sudo dnf install zsh # Fedora
 sudo pacman -S zsh #Arch Linux
 ```
 
-## Sincronizando Dotfiles
+## Extensões Firefox/Chromium
 
-Clonando meu _dotfiles_ é criando os _links_ simbólicos para sincronização, sincronizar pasta config apenas no Arch Linux.
-
-```sh
-git clone https://github.com/Gitashay/dotfiles.git $HOME/.dotfiles
-ln -s -f $HOME/.dotfiles/.zshrc $HOME/
-ln -s -f $HOME/.dotfiles/.gitconfig $HOME/
-ln -s -f $HOME/.dotfiles/.vimrc $HOME/
-ln -s $HOME/.dotfiles/config $HOME/.config # Apenas para Arch Linux
-```
+- Dark Reader
+- Clear Browsing Data
+- ColorZilla
+- Material Icons for GitHub
+- Enhancer for YouTube
+- BrowserStack
+- DownThemAll (Firefox)
+- CSS Peeper (Chromium)
+- Designer Tools (Chromium)
+- ModHeader (Chromium)
+- StackOverflow Power User (Chromium)
 
 ## Plugins do vim
 
@@ -163,7 +165,7 @@ cd $HOME
 vim .coc.nvim
 ```
 
-Copiar código disponível no [GITHUB](https://github.com/fberbert/vimrc "Repositório Codiano Hakeado")
+Copiar código disponível no [GITHUB](https://github.com/fberbert/vimrc 'Repositório Codiano Hakeado')
 
 ### Instalando Plugins
 
@@ -176,11 +178,11 @@ Dentro do VIM usar comando para instalar os plugins
 ### Criando coc-settings.json
 
 Dentro do vim usar comando `:CocConfig`  
-Criara um arquivo _.json_ onde podemos setar algumas configuração para os plugins do Coc, qualquer duvida [GitHub do Projeto](https://github.com/neoclide/coc.nvim "Repositório Coc Vim")
+Criara um arquivo _.json_ onde podemos setar algumas configuração para os plugins do Coc, qualquer duvida [GitHub do Projeto](https://github.com/neoclide/coc.nvim 'Repositório Coc Vim')
 
 ### Fonte
 
-Fonte utilizada para instalação e configuração do Coc, Canal [Cotidiano Hackeado](https://www.youtube.com/watch?v=hdZMqMeruSQ&ab_channel=CotidianoHackeado "Youtube Cotidiano Hackeado")
+Fonte utilizada para instalação e configuração do Coc, Canal [Cotidiano Hackeado](https://www.youtube.com/watch?v=hdZMqMeruSQ&ab_channel=CotidianoHackeado 'Youtube Cotidiano Hackeado')
 
-[fedy]: https://github.com/rpmfusion-infra/fedy "Repositório do Fedy"
-[oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh "Repositório Oh-My-Zsh"
+[fedy]: https://github.com/rpmfusion-infra/fedy 'Repositório do Fedy'
+[oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh 'Repositório Oh-My-Zsh'
