@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-killall -q polybar
+THEME="nord"
 
-echo "---" | tee -a /tmp/polybar.log
-polybar main 2>&1 | tee -a /tmp/polybar.log & disown
-echo "Bars launched..."
+killall polybar
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
+CONFIG_DIR=$(dirname $0)/themes/$THEME/config.ini
+polybar main -c $CONFIG_DIR &

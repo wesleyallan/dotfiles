@@ -38,6 +38,32 @@ Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta
 - Firefox Tema, Tema GTK-3, ícones e Fontes
   - Arquivos armazenados no Drive
 
+### Plugins shell fish
+
+Utilizando o gerenciado de extensões _fisher_
+
+- [AutoPair](https://github.com/jorgebucaran/autopair.fish)
+- [fzf.fish](https://github.com/PatrickF1/fzf.fish)
+- [done](https://github.com/franciscolourenco/done)
+
+### Arquivos .config base
+
+- kitty `/usr/share/doc/kitty/kitty.conf`
+- rofi
+  - config `/usr/share/doc/rofi/examples`
+  - themes `/usr/share/doc/rodi/themes`
+- makepkg `/etc/makepkg.conf`
+- starship `/example/non/default/path/starship.toml`
+- gtk `/usr/share/gtk-3.0/settings.ini`
+
+### Pacotes Default
+
+Utilizado pelo asdf
+
+- npm `.default-npm-packages`
+- rust `.default-cargo-packages`
+- E assim por diante...
+
 ### Instalando Tema Firefox
 
 How to use a userChrome.css theme

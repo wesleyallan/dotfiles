@@ -1,0 +1,1 @@
+/home/wesleyallan/.asdf/completions/asdf.fish

@@ -1,32 +1,33 @@
 #-----wesleyallan-sxhkd-Config-File-----
 
-# Terminal Emulator
+# Terminal Emulator 
 super + Return
-  alacritty
-
-# Browser
-super + shift + Return
   kitty
 
 # Program Launcher
 super + d
-	sh $HOME/.config/rofi/bin/launcher
+	rofi -show drun
+	# sh $HOME/.config/rofi/bin/launcher
 
 # Rofi Network Menu
 super + n
 	networkmanager_dmenu -l 2
 
-# Ranger or nautilus 
+# Ranger or thunar
 super + {_,shift + }a
-	{alacritty -e ranger, nautilus}
+	{kitty -e ranger, thunar}
 
 # btop
 super + shift + m
     kitty --class=btop -e btop
 
 # Rofi Menus/Applets
-super + {r,p,z,i}
-	sh $HOME/.config/rofi/bin/{runner,powermenu,screenshot,network}
+#super + {r,p,z,i}
+# 	sh $HOME/.config/rofi/bin/{runner,powermenu,screenshot,network}
+
+# Rofi Menus
+super + r
+    rofi -show run
 
 super + b
 	rofi-bluetooth

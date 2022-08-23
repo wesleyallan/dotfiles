@@ -6,13 +6,13 @@
   "sync.forceDownload": false,
   "sync.removeExtensions": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "editor.parameterHints.enabled": true,
   "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
   // "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
-  "editor.fontFamily": "'JetBrains Mono', Consolas, monospace",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono',  monospace",
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.lineHeight": 24,
@@ -33,7 +33,6 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-  "breadcrumbs.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always", // ?
   "cSpell.language": "en,pt-BR",
   "cSpell.userWords": [
