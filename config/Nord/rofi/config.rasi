@@ -1,0 +1,7 @@
+configuration {
+	show-icons:	true;
+	icon-themes: 	"Papirus";
+}
+
+@theme "nord2"
+/* @import "/usr/share/rofi/themes/gruvbox-dark-hard.rasi" */
