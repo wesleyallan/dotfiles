@@ -12,6 +12,8 @@ Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta
 
 ### Instalar
 
+- [Pomotroid](https://github.com/Splode/pomotroid)
+- [Pomatez](https://github.com/roldanjr/pomatez)
 - [LunarVim](https://github.com/LunarVim/LunarVim)
 - [Neofetch](https://github.com/dylanaraps/neofetch)
   - [Temas para Neofetch](https://github.com/Chick2D/neofetch-themes)
@@ -31,6 +33,8 @@ Pegamos o sistema praticamente cru apos a instalação, então muitas ferramenta
 - Ranger-sixel
 - [Spotify-Tui](https://github.com/Rigellute/spotify-tui)
 - [SpotifyD](https://github.com/Spotifyd/spotifyd)
+- [youtube-dl]() (yt-dlp, e muito mais rápido)
+  - Substituir link simbólico do youtube-dl para yt-dlp
 - [Mps-Youtube](https://github.com/mps-youtube/mps-youtube)
 - [Exa](https://github.com/ogham/exa)
 - [Bat](https://github.com/sharkdp/bat)

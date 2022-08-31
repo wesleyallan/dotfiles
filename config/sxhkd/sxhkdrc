@@ -5,8 +5,8 @@ super + Return
   kitty
 
 # Program Launcher
-super + d
-	rofi -show drun
+super + {_,shift + }d
+	rofi -show {drun, window}
 	# sh $HOME/.config/rofi/bin/launcher
 
 # Rofi Network Menu
@@ -16,6 +16,10 @@ super + n
 # Ranger or thunar
 super + {_,shift + }a
 	{kitty -e ranger, thunar}
+
+# Code
+super + {_,shift + }e
+  {codium, kitty -e lvim}
 
 # btop
 super + shift + m
@@ -29,6 +33,7 @@ super + shift + m
 super + r
     rofi -show run
 
+# Rofi Bluetooth
 super + b
 	rofi-bluetooth
 
