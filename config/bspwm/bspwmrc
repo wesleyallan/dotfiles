@@ -2,8 +2,14 @@
 
 ## Autostart
 
+# xhost (xserver no ditrobox)
+xhost +si:localuser:$USER
+
+# xmodmap
+xmodmap .Xmodmap
+
 # Bar
-# $HOME/.config/polybar/launch.sh &
+$HOME/.config/polybar/launch.sh &
 
 # Background
 $HOME/.fehbg

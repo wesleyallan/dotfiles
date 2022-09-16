@@ -7,5 +7,10 @@
   {
     "key": "alt+b",
     "command": "workbench.action.toggleActivityBarVisibility"
-  }
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
 ]

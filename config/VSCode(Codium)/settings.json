@@ -6,7 +6,7 @@
   "sync.forceDownload": false,
   "sync.removeExtensions": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "editor.parameterHints.enabled": true,
   "editor.smoothScrolling": true,
@@ -30,7 +30,6 @@
   "debug.javascript.codelens.npmScripts": "never",
   "debug.console.fontFamily": "JetBrains Mono",
   "extensions.ignoreRecommendations": true,
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
   "javascript.updateImportsOnFileMove.enabled": "always", // ?
@@ -76,5 +75,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "workbench.activityBar.visible": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/run/current-system/sw/bin/nvim",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
 }

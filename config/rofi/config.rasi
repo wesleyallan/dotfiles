@@ -3,5 +3,5 @@ configuration {
 	icon-themes: 	"Papirus";
 }
 
-@theme "nord2"
+@theme "dracula"
 /* @import "/usr/share/rofi/themes/gruvbox-dark-hard.rasi" */

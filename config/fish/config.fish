@@ -32,23 +32,23 @@ alias fgrep='fgrep --color=auto'
 alias clr='clear && todo list && jfetch'
 
 ### LunarVim
-set -gx PATH $HOME/.local/bin:$HOME/.cargo/bin:$PATH
+# set -gx PATH $HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 ### STARSHIP 
 starship init fish | source
-fish_add_path /home/wesleyallan/.spicetify
+# fish_add_path /home/wesleyallan/.spicetify
 
 ### ASDF
-source ~/.asdf/asdf.fish
+# source ~/.asdf/asdf.fish
 
 ### JAVA
 # source ~/.asdf/plugins/java/set-java-home.fish
-. ~/.asdf/plugins/java/set-java-home.fish
+# . ~/.asdf/plugins/java/set-java-home.fish
 
 ### Start
 
 # Todo
-todo list
+# todo list
 
 # Jfetch
-jfetch
+# jfetch
