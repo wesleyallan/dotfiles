@@ -25,10 +25,13 @@
     pkgs.nix-prefetch-git
 
     # Ambiente
-    pkgs.feh
-    pkgs.mupdf
     pkgs.imagemagick
+    pkgs.feh
     pkgs.polybar
+    pkgs.mpv
+    pkgs.yt-dlp
+    pkgs.mupdf
+    pkgs.obsidian
     pkgs.vscodium
     pkgs.xfce.thunar
     pkgs.xfce.thunar-media-tags-plugin

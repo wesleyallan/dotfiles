@@ -2,7 +2,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -26,7 +27,7 @@
   console = {
     font = "Lat2-Terminus16";
     keyMap = "us";
-  #   useXkbConfig = true; # use xkbOptions in tty.
+    #   useXkbConfig = true; # use xkbOptions in tty.
   };
 
   # Interface
@@ -63,17 +64,48 @@
   users.users.wesleyNixOs = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" ];
-  #  packages = with pkgs; [
-  #    firefox
-  #   ];
+    #  packages = with pkgs; [
+    #    firefox
+    #   ];
   };
 
   # Pacotes
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    kitty dmenu firefox-bin brave vivaldi starship polybar feh xfce.thunar vscodium
-    vim neovim bat exa wget curl git sxhkd neofetch lm_sensors pavucontrol playerctl unzip unrar ranger xorg.xmodmap rclone pamixer killall xorg.xhost
-    xfce.thunar-volman xfce.thunar-archive-plugin xfce.thunar-media-tags-plugin
+    kitty
+    rofi
+    dmenu
+    firefox-bin
+    brave
+    vivaldi
+    starship
+    polybar
+    feh
+    xfce.thunar
+    vscodium
+    vim
+    neovim
+    bat
+    exa
+    wget
+    curl
+    git
+    sxhkd
+    neofetch
+    lm_sensors
+    pavucontrol
+    playerctl
+    unzip
+    unrar
+    ranger
+    xorg.xmodmap
+    rclone
+    pamixer
+    killall
+    xorg.xhost
+    xfce.thunar-volman
+    xfce.thunar-archive-plugin
+    xfce.thunar-media-tags-plugin
   ];
 
   # GVFS
@@ -91,6 +123,9 @@
     fonts = with pkgs; [
       noto-fonts
       noto-fonts-emoji
+      noto-fonts-cjk
+      liberation_ttf
+      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hack" "Inconsolata" "Iosevka" "JetBrainsMono" "Noto" "Mononoki" "RobotoMono" "SpaceMono" ]; })
     ];
   };
 
@@ -105,6 +140,6 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  
+
   system.stateVersion = "22.05";
 }
