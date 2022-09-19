@@ -63,7 +63,7 @@
   users.defaultUserShell = pkgs.fish;
   users.users.wesleyNixOs = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "docker" ];
+    extraGroups = [ "wheel" "docker" "networkmanager" ];
     #  packages = with pkgs; [
     #    firefox
     #   ];
@@ -76,14 +76,8 @@
     rofi
     dmenu
     firefox-bin
-    brave
-    vivaldi
     starship
-    polybar
     feh
-    xfce.thunar
-    vscodium
-    vim
     neovim
     bat
     exa
@@ -103,10 +97,14 @@
     pamixer
     killall
     xorg.xhost
+    xfce.thunar
     xfce.thunar-volman
     xfce.thunar-archive-plugin
     xfce.thunar-media-tags-plugin
   ];
+
+  # Editor Padrão
+  programs.vim.defaultEditor = true;
 
   # GVFS
   services.gvfs.enable = true;
@@ -129,8 +127,7 @@
     ];
   };
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
+  # Alguns programas precisam de wrappers SUID, normalmente por aqui adiciona variavel de ambiente, interessante para java (ou usar nix-shell)
   programs.dconf.enable = true;
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
