@@ -4,7 +4,7 @@ let
   userInfo = import ./user.nix { };
   myPackages = (import ./packages.nix { inherit pkgs; }).packages;
   browser = [
-    "firefox"
+    "vivaldi"
   ];
   associations = {
     "application/pdf" = [ "mupdf" ];

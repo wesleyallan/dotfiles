@@ -10,6 +10,7 @@
     pkgs.direnv
     pkgs.tree
     pkgs.jq
+    pkgs.yt-dlp
 
     # Programação
     pkgs.gcc
@@ -26,10 +27,11 @@
 
     # Ambiente
     pkgs.imagemagick
-    pkgs.feh
     pkgs.polybar
     pkgs.mpv
-    pkgs.yt-dlp
+    pkgs.obs-studio
+    pkgs.shotcut
+    pkgs.gimp
     pkgs.mupdf
     pkgs.obsidian
     pkgs.vscodium
@@ -37,6 +39,10 @@
     pkgs.xfce.thunar-media-tags-plugin
     pkgs.xfce.thunar-archive-plugin
     pkgs.xfce.thunar-volman
+    pkgs.brave
+    pkgs.vivaldi
+    pkgs.vivaldi-widevine
+    pkgs.vivaldi-ffmpeg-codecs
 
     # Pacotes Interessante
     # pkgs.sbt
