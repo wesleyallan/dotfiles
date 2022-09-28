@@ -28,6 +28,10 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Obsidian and Rclone sync
+alias obsidianEnv='rclone sync -P --create-empty-src-dirs --transfers=5 ~/Obsidian gdrive:/Obsidian'
+alias obsidianRec='rclone sync -P --create-empty-src-dirs --transfers=5 gdrive:/Obsidian ~/Obsidian'
+
 # clear personalizado
 alias clr='clear && pfetch'
 

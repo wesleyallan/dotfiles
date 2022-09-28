@@ -49,4 +49,3 @@ bspc config removal_adjustment true
 ## Rules
 bspc rule -a feh state=floating
 bspc rule -a Thunar state=floating focus=on
-bspc rule -a telegram-desktop state=floating

@@ -45,17 +45,17 @@ super + Escape
 
 # Multimedia
 XF86AudioRaiseVolume
-  # pactl set-sink-volume @DEFAULT_SINK@ +2%
-    pamixer -i 2
+  pactl set-sink-volume @DEFAULT_SINK@ +2%
+    # pamixer -i 2
 XF86AudioLowerVolume
-  # pactl set-sink-volume @DEFAULT_SINK@ -2%
-  pamixer -d 2
+  pactl set-sink-volume @DEFAULT_SINK@ -2%
+  # pamixer -d 2
 XF86AudioMute
-  # pactl set-sink-mute @DEFAULT_SINK@ toggle
-  pamixer -m
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+  # pamixer -m
 XF86AudioMicMute
-  # pactl set-source-mute @DEFAULT_SOURCE@ toggle
-  pamixer -t
+  pactl set-source-mute @DEFAULT_SOURCE@ toggle
+  # pamixer -t
 XF86AudioPlay
   playerctl play-pause
 XF86AudioNext

@@ -20,10 +20,11 @@
     pkgs.nodejs
     pkgs.rustc
     pkgs.cargo
-    pkgs.python310
-    pkgs.python310Packages.pip
+    # pkgs.python310
+    # pkgs.python310Packages.pip
     pkgs.cmake
     pkgs.nix-prefetch-git
+    # pkgs.mysql-workbench
 
     # Ambiente
     pkgs.imagemagick
@@ -39,10 +40,14 @@
     pkgs.xfce.thunar-media-tags-plugin
     pkgs.xfce.thunar-archive-plugin
     pkgs.xfce.thunar-volman
+    pkgs.chromium
     pkgs.brave
     pkgs.vivaldi
     pkgs.vivaldi-widevine
     pkgs.vivaldi-ffmpeg-codecs
+    pkgs.notion-app-enhanced
+    pkgs.spotifyd
+    pkgs.spotify-tui
 
     # Pacotes Interessante
     # pkgs.sbt
