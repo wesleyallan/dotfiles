@@ -20,8 +20,8 @@
     pkgs.nodejs
     pkgs.rustc
     pkgs.cargo
-    # pkgs.python310
-    # pkgs.python310Packages.pip
+    pkgs.python310
+    pkgs.python310Packages.pip
     pkgs.cmake
     pkgs.nix-prefetch-git
     # pkgs.mysql-workbench
