@@ -14,7 +14,6 @@
   // "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
   "editor.fontFamily": "'JetBrainsMono Nerd Font Mono',  monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 16,
   "editor.lineHeight": 24,
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -22,7 +21,6 @@
   "prettier.singleQuote": true,
   "prettier.arrowParens": "avoid",
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace'",
-  "terminal.integrated.fontSize": 14,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "telemetry.telemetryLevel": "off",
@@ -40,6 +38,10 @@
   "cSpell.enableFiletypes": [
     "markdown"
   ],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
   // "editor.rulers": [
   //   90
   // ],
@@ -75,8 +77,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "vscode-neovim.neovimExecutablePaths.linux": "/run/current-system/sw/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
+  "editor.fontSize": 16,
+  "editor.guides.bracketPairs": "active",
 }
