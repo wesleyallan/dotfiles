@@ -6,7 +6,6 @@
   "sync.forceDownload": false,
   "sync.removeExtensions": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "editor.parameterHints.enabled": true,
   "editor.smoothScrolling": true,
@@ -59,7 +58,8 @@
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+    "editor.formatOnSave": false
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
@@ -69,7 +69,8 @@
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+    "editor.formatOnSave": false
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -77,10 +78,15 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.linux": "usr/local/bin/nvim",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "editor.fontSize": 16,
   "editor.guides.bracketPairs": "active",
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 11,
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/wesleyallan/.config/nvim/init.vim",
+  "workbench.activityBar.visible": false,
+  "explorer.compactFolders": false,
 }

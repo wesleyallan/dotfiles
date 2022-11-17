@@ -3,7 +3,7 @@
 ## Autostart
 
 # xhost (xserver no ditrobox)
-xhost +si:localuser:$USER
+# xhost +si:localuser:$USER
 
 # xmodmap
 xmodmap .Xmodmap
@@ -49,3 +49,4 @@ bspc config removal_adjustment true
 ## Rules
 bspc rule -a feh state=floating
 bspc rule -a Thunar state=floating focus=on
+bspc rule -a nautilus state=floating focus=on

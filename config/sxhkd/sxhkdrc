@@ -17,11 +17,11 @@ super + n
 
 # Ranger or thunar
 super + {_,shift + }a
-	{kitty -e ranger, thunar}
+	{nautilus, kitty -e ranger}
 
 # Code
 super + {_,shift + }e
-  {codium, kitty -e lvim}
+  {code, kitty -e lvim }
 
 # btop
 super + shift + m

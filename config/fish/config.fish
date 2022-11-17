@@ -2,8 +2,9 @@
 
 set fish_greeting
 set -g IFS \n\ \t
-set -qg __fish_added_user_paths
-or set -g __fish_added_user_paths
+# set -qg __fish_added_user_paths
+# or set -g __fish_added_user_paths
+# set -gx PATHBKP $PATH
 
 ### Alias
 
@@ -36,21 +37,26 @@ alias obsidianEnv='rclone sync -P --create-empty-src-dirs --transfers=5 ~/Obsidi
 alias obsidianRec='rclone sync -P --create-empty-src-dirs --transfers=5 gdrive:/Obsidian ~/Obsidian'
 
 # clear personalizado
-alias clr='clear && pfetch'
+#alias clr='clear && pfetch'
 
 ### LunarVim
 set -gx PATH $HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
+
 ### STARSHIP 
 starship init fish | source
-fish_add_path /home/wesleyNixOs/.spicetify
+# fish_add_path /home/wesleyNixOs/.spicetify
 
 ### ASDF
 source ~/.asdf/asdf.fish
 
-### JAVA
+### JAVA ASDF
 # source ~/.asdf/plugins/java/set-java-home.fish
-# . ~/.asdf/plugins/java/set-java-home.fish
+. ~/.asdf/plugins/java/set-java-home.fish
+
+### LunarVim + Android
+# set -gx ANDROID_HOME $HOME/Android/Sdk
+# set -gx PATH $HOME/.local/bin:$HOME/.cargo/bin:$ANDROID_HOME/emulador:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/android-studio/bin:$PATH
 
 ### Start
 
