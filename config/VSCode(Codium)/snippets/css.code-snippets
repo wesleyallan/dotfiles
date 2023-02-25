@@ -1,0 +1,29 @@
+{
+  "Reset CSS": {
+    "scope": "css",
+    "prefix": "resetcss",
+    "body": [
+      "* {",
+      "\tmargin: 0;",
+      "\tpadding: 0;",
+      "\tborder: 0;",
+      "\tbox-sizing: border-box;",
+      "\tfont-synthesis: none;",
+      "\tfont-size: 100%;",
+      "\ttext-rendering: optimizeLegibility;",
+      "\t-webkit-font-smoothing: antialiased;",
+      "\t-moz-osx-font-smoothing: grayscale;",
+      "\t-webkit-text-size-adjust: 100%;",
+      "}",
+      "",
+      ":root {",
+      "\tfont-size: 62.5%;",
+      "}",
+      "",
+      "body {",
+      "\tfont-size: 1.6rem;",
+      "}"
+    ],
+    "description": "simple reset for css"
+  }
+}

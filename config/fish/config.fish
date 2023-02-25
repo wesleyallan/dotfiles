@@ -25,7 +25,7 @@ alias l.='exa -a | egrep "^\."'
 # alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 
 # Bat (Ubunto)
-alias bat='batcat'
+# alias bat='batcat'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -48,20 +48,8 @@ starship init fish | source
 # fish_add_path /home/wesleyNixOs/.spicetify
 
 ### ASDF
-source ~/.asdf/asdf.fish
+source /opt/asdf-vm/asdf.fish
 
 ### JAVA ASDF
 # source ~/.asdf/plugins/java/set-java-home.fish
-. ~/.asdf/plugins/java/set-java-home.fish
-
-### LunarVim + Android
-# set -gx ANDROID_HOME $HOME/Android/Sdk
-# set -gx PATH $HOME/.local/bin:$HOME/.cargo/bin:$ANDROID_HOME/emulador:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/android-studio/bin:$PATH
-
-### Start
-
-# Todo
-# todo list
-
-# Pfetch
-# pfetch
+# . ~/.asdf/plugins/java/set-java-home.fish
