@@ -1,52 +1,58 @@
 #! /bin/sh
 
-## Autostart
+##   ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗
+##  ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
+##  ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+##  ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+##  ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+##   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
 
-# xhost (xserver no ditrobox)
-# xhost +si:localuser:$USER
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x dunst > /dev/null || dunst &
 
-# xmodmap
-xmodmap .Xmodmap
+bspc monitor -d I II III IV V VI VII VIII IX X
 
-# Bar
-$HOME/.config/polybar/launch.sh &
+bspc config border_width        2
+bspc config window_gap          12
+bspc config border-width 	    0
+bspc config split_ratio         0.52
 
-# Background
-$HOME/.fehbg
+bspc config -d ^1 top_padding 120
+bspc config -d ^1 bottom_padding 120
+bspc config -d ^1 left_padding 200
+bspc config -d ^1 right_padding 200
+#bspc config normal_border_color   "#f7768e"
+#bspc config focused_border_color  "#353b45"
 
-# Compositor
-# picom -b &
+bspc config borderless_monocle      true
+bspc config gapless_monocle         true
+bspc config focus_follows_pointer   false
+bspc config paddingless_monocle     true
+bspc config single_monocle 	        false
 
-# Autokill
-killall sxhkd; sxhkd &
-killall dunst; dunst &
-# pgrep -x sxhkd > /dev/null || sxhkd &
-# pgrep -x dunst > /dev/null || dunst &
+bspc config automatic_scheme 	    spiral
+bspc config initial_polarity	    first_child
+bspc config removal_adjustment 	    true
 
-## Workspaces
-bspc monitor -d 1 2 3 4 5 6
-
-## Config
-bspc config border_width          0
-# bspc config window_gap            10
-bspc config window_gap            0
-bspc config border_radius         15
-bspc config bottom_padding        0
-bspc config split_ratio           0.5
-bspc config normal_border_color   "#f7768e"
-bspc config focused_border_color  "#353b45"
-
-bspc config borderless_monocle    true
-bspc config gapless_monocle       false 
-bspc config focus_follows_pointer false
-bspc config paddingless_monocle   true
-bspc config single_monocle        false
-
-bspc config automatic_scheme spiral       # Abrir janelas em espiral
-bspc config initial_polarity first_child
-bspc config removal_adjustment true
-
-## Rules
 bspc rule -a feh state=floating
-bspc rule -a Thunar state=floating focus=on
-bspc rule -a nautilus state=floating focus=on
+bspc rule -a SimpleScreenRecorder state=floating
+bspc rule -a Gnome-screenshot state=floating
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
+## ██████╗ ██╗   ██╗███╗   ██╗
+## ██╔══██╗██║   ██║████╗  ██║
+## ██████╔╝██║   ██║██╔██╗ ██║
+## ██╔══██╗██║   ██║██║╚██╗██║
+## ██║  ██║╚██████╔╝██║ ╚████║
+## ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+
+
+~/.config/polybar/./launch.sh
+$HOME/.fehbg
+xsetroot -cursor_name left_ptr &
+picom --experimental-backends &

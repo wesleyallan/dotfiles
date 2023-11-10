@@ -1,29 +1,28 @@
-#---- Shortcuts ----#
+## ███████╗██╗  ██╗ ██████╗ ██████╗ ████████╗ ██████╗██╗   ██╗████████╗███████╗
+## ██╔════╝██║  ██║██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██║   ██║╚══██╔══╝██╔════╝
+## ███████╗███████║██║   ██║██████╔╝   ██║   ██║     ██║   ██║   ██║   ███████╗
+## ╚════██║██╔══██║██║   ██║██╔══██╗   ██║   ██║     ██║   ██║   ██║   ╚════██║
+## ███████║██║  ██║╚██████╔╝██║  ██║   ██║   ╚██████╗╚██████╔╝   ██║   ███████║
+## ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═════╝    ╚═╝   ╚══════╝
 
-# terminal emulator
 super + Return
 	alacritty
 
-# program launcher
 super + {_,shift +}d
 	rofi -show {drun, window}
 
 super + r
 	rofi -show run
 
-# make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Archives
 super + a
 	nautilus
 
-# Print
 super + shift + s
 	gnome-screenshot -i
 
-# Multimedia
 XF86AudioRaiseVolume
   pactl set-sink-volume @DEFAULT_SINK@ +2%
     # pamixer -i 2
@@ -45,7 +44,12 @@ XF86AudioPrev
 XF86AudioStop
   playerctl stop
 
-#-----bspwm-Hotkeys-----
+## ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗
+## ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║
+## ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║
+## ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║
+## ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║
+## ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝
 
 # quit/restart bspwm
 super + alt + {q,r}
