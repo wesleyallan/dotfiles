@@ -1,8 +1,28 @@
 configuration {
 	show-icons:	true;
-	icon-themes: 	"Papirus";
+	icon-themes: "Papirus";
+  font: "SauceCodePro Nerd Font Medium 10";
+  modi: "window,run,drun";
+
+  drun {
+    display-name: " ";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: " ";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+
 }
 
-/* @theme "dracula" */
-/* @import "/usr/share/rofi/themes/gruvbox-dark-hard.rasi" */
-@import "/home/wesleyallan/.config/rofi/themes/dracula.rasi"
+//@theme "/home/wesleydev/.config/rofi/themes/nord2.rasi"
+//@theme "/home/wesleydev/.config/rofi/themes/nord3.rasi"
+@theme "/home/wesleydev/.config/rofi/themes/nord2.rasi"
