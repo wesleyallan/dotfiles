@@ -1,47 +1,27 @@
-#-----wesleyallan-sxhkd-Config-File-----
+#---- Shortcuts ----#
 
-# Terminal Emulator 
+# terminal emulator
 super + Return
-  kitty
+	alacritty
 
-# Program Launcher
+# program launcher
 super + {_,shift +}d
-	 rofi -show {drun, window}
-	# sh $HOME/.config/rofi/bin/launcher
-super + ctrl + d
-    dmenu_run
+	rofi -show {drun, window}
 
-# Rofi Network Menu
-super + n
-	networkmanager_dmenu -l 2
-
-# Ranger or thunar
-super + {_,shift + }a
-	{nautilus, kitty -e ranger}
-
-# Code
-super + {_,shift + }e
-  {code, kitty -e lvim }
-
-# btop
-super + shift + m
-    kitty --class=btop -e btop
-
-# Rofi Menus/Applets
-#super + {r,p,z,i}
-# 	sh $HOME/.config/rofi/bin/{runner,powermenu,screenshot,network}
-
-# Rofi Menus
 super + r
-    rofi -show run
+	rofi -show run
 
-# Rofi Bluetooth
-super + b
-	rofi-bluetooth
-
-# Reload configs sxhkd:
+# make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# Archives
+super + a
+	nautilus
+
+# Print
+super + shift + s
+	gnome-screenshot -i
 
 # Multimedia
 XF86AudioRaiseVolume
