@@ -20,8 +20,8 @@ super + Escape
 super + a
 	nautilus
 
-super + shift + s
-	gnome-screenshot -i
+super + shift + {_,ctrl +} + s
+	{gnome-screenshot -i, simplescreenrecorder}
 
 XF86AudioRaiseVolume
   pactl set-sink-volume @DEFAULT_SINK@ +2%
@@ -43,6 +43,7 @@ XF86AudioPrev
   playerctl previous
 XF86AudioStop
   playerctl stop
+
 
 ## ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗
 ## ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║
