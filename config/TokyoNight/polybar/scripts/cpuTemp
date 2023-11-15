@@ -1,0 +1,11 @@
+#!/bin/bash
+
+temperature=$(sensors | grep 'Package id 0' | awk '{print $4}' | tr -d '+' | cut -c1-2)
+
+if [ "$temperature" -gt 90 ]; then
+    echo "%{F#db4b4b}$temperature°C"
+elif [ "$temperature" -gt 70 ]; then
+    echo "%{F#e0af68}$temperature°C"
+else
+    echo "%{F#9ece6a}$temperature°C"
+fi
