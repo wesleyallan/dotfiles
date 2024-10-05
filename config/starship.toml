@@ -1,23 +1,28 @@
-# add_newline = true 
+# add_newline = true
 # format = "[ ](bold white)$all"
-# 
+#
 # [character]
 # success_symbol = "[➜](bold green)"
 # error_symbol = "[✗](bold red)"
 
 # Use custom format:
-format="$directory$git_branch$character"
+format="$directory$git_branch$git_status$character"
 
-# Prompt symbols 
+# Prompt symbols
 [character]
-success_symbol = "[](#9ece6a bold)"
+success_symbol = "[󰸞](#9ece6a bold)"
 error_symbol = "[](#db4b4b)"
-vicmd_symbol = "[](#9ece6a)"
+vicmd_symbol = "](#9ece6a)"
 
 [directory]
-format = "[]($style)[[ ](bg:#292E42 fg:#7aa2f7)$path](bg:#292E42 fg:#c0caf5)[ ]($style)"
-style = "bg:#1a1b26 fg:#292E42"
+format = "[]($style)[[ ](bg:#292E42 fg:#7aa2f7)$path](bg:#292E42 fg:#c0caf5)[ ]($style)"
+style = "bg:#1a1b2600 fg:#292E42"
 
 [git_branch]
-format = "[]($style)[[ ](bg:#292E42 fg:#db4b4b)$branch](bg:#292E42 fg:#c0caf5)[]($style)"
-style = "bg:#1a1b26 fg:#292E42"
+format = "[]($style)[[ ](bg:#292E42 fg:#db4b4b)$branch](bg:#292E42 fg:#c0caf5)"
+style = "bg:#1a1b2600 fg:#292E42"
+
+[git_status]
+format = "[ $all_status$ahead_behind ](bg:#292E42 fg:#db4b4b)(bg:#292E42 fg:#c0caf5)[ ]($style)"
+style = "bg:#1a1b2600 fg:#292E42"
+
